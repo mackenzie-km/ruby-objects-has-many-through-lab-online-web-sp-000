@@ -4,6 +4,8 @@ class Song
   #indirect: by nature, and to simply everything, songs are connecting points between genres and artists. 
  attr_reader :name, :artist, :genre 
  
+ @@all = []
+ 
  def initialize(name, artist, genre)
    @name = name 
    @artist = artist 
@@ -11,7 +13,7 @@ class Song
    @@all << self 
  end 
   binding.pry 
-@@all = []
+
 
 def self.all
   @@all
