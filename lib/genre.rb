@@ -20,4 +20,14 @@ class Genre
    end 
  end 
  
+  
+ def artists
+   artist_genres = [] 
+    Song.all.each do |song| 
+     song.genre == self 
+      artist_genres << song.artist 
+   end 
+   artist_genres
+ end 
+ 
  end 
