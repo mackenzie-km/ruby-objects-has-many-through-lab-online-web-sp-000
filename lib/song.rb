@@ -16,7 +16,7 @@ def self.all
   @@all
 end 
 
-def artist 
+def artist
   @@artist
 end 
 
