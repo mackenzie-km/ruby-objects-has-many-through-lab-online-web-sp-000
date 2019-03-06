@@ -1,3 +1,4 @@
+require "pry"
 class Artist 
   #DIRECT: relationship with song 
   #INDIRECT: relationship with genre through song 
@@ -13,7 +14,7 @@ class Artist
  def new_song(name, genre)
    name = Song.new(name, self, genre)
  end 
- 
+   binding.pry 
  def songs
    Song.all.select do |song| 
      song.artist == self
