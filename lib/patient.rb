@@ -28,7 +28,7 @@ def doctors
   doctors_array = []
    Appointment.all.collect do |appointment|
     if appointment.patient == self 
-      doctors_array << appointment.doctor
+      doctors_array << self
   end 
 end
   doctors_array
