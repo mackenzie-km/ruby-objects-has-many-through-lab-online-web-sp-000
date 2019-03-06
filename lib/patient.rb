@@ -22,5 +22,16 @@ def appointments
     appointment.patient == self 
   end 
 end 
-#binding.pry
+
+
+def doctors
+  doctors_array = []
+   Appointment.all.collect do |appointment|
+    if appointment.patient == self 
+      doctors_array << appointment.doctor
+  end 
+end
+  doctors_array
+end 
+
 end 
