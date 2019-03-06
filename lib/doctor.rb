@@ -22,4 +22,13 @@ def appointments
   end 
 end 
 
+def patients 
+  patients_array = []
+   Appointment.all.collect do |appointment|
+    if appointment.doctor == self 
+      patients_array << appointment.patient
+  end 
+  patients_array
+end 
+
 end 
