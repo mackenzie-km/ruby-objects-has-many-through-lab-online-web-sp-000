@@ -8,11 +8,11 @@ class Song
  
  def initialize(name, artist, genre)
    @name = name 
-   @artist = artist 
+   @artist = Artist.new(artist)
    @genre = genre 
    @@all << self 
  end 
-  binding.pry 
+  #binding.pry 
 
 
 def self.all
