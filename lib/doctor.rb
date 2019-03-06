@@ -25,7 +25,7 @@ end
 
 def patients 
   patients_array = []
-   Appointment.all.collect do |appointment|
+   Appointment.all.each do |appointment|
     if appointment.doctor == self 
       patients_array << appointment.patient
   end 
