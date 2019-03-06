@@ -21,8 +21,9 @@ class Artist
  end 
  
  def genres 
-    Song.all.collect do |song| 
-     song.genre 
+    Song.all.each do |song| 
+     song.artist == self 
+      song.genre 
    end 
  end 
  
