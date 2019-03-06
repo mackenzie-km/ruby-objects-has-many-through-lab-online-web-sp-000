@@ -32,5 +32,5 @@ def patients
 end
   patients_array
 end 
-
+binding.pry
 end 
