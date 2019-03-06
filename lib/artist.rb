@@ -3,7 +3,7 @@ class Artist
   #INDIRECT: relationship with genre through song 
   @@all = []
   
- attr_reader :name, :genre 
+ attr_reader :name
  
  def initialize(name)
    @name = name 
