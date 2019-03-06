@@ -33,5 +33,5 @@ def doctors
 end
   doctors_array
 end 
-
+binding.pry 
 end 
