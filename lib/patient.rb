@@ -22,5 +22,5 @@ def appointments
     appointment.patient == self 
   end 
 end 
-binding.pry
+#binding.pry
 end 
