@@ -28,6 +28,7 @@ def patients
     if appointment.doctor == self 
       patients_array << appointment.patient
   end 
+end
   patients_array
 end 
 
